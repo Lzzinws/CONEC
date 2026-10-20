@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>CONEC — Grupo de Jovens Católicos</title>
+<meta name="description" content="CONEC — grupo de jovens católicos da Paróquia Nossa Senhora de Nazaré. Reuniões, eventos e formação.">
+<meta property="og:title" content="CONEC — Grupo de Jovens Católicos"><meta property="og:description" content="Jovens que se conectam com Cristo e entre si."><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E✝️%3C/text%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--v:#7B1020;--vd:#4A0712;--vr:#A51D32;--bg:#fff;--g:#F5F3F3;--t:#20191B;--card:#fff;--bd:#e6dfe0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1214;--g:#241a1c;--t:#f3eaeb;--card:#2a1e20;--bd:#3d2c2f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a1214;--g:#241a1c;--t:#f3eaeb;--card:#2a1e20;--bd:#3d2c2f;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:70px}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--t);font:16px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+a{color:inherit}.w{max-width:1080px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:var(--vd);color:#fff}
+header .w{display:flex;align-items:center;gap:16px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 20px Montserrat}
+.logo small{display:block;font:500 9px Inter;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.logo img{height:38px}nav{margin-left:auto;display:flex;gap:18px;align-items:center}
+nav a{text-decoration:none;font-size:14px;opacity:.9}nav a:hover{opacity:1;text-decoration:underline}
+.btn{display:inline-block;background:var(--vr);color:#fff;padding:10px 18px;border-radius:999px;font:600 14px Inter;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--v)}.btn.o{background:transparent;border:1.5px solid currentColor}
+#bm{display:none;margin-left:auto;background:none;border:0;color:#fff;font-size:26px}
+@media(max-width:860px){#bm{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--vd);flex-direction:column;padding:16px;margin:0;align-items:flex-start}nav.on{display:flex}}
+.hero{position:relative;color:#fff;background:linear-gradient(135deg,var(--vd),var(--v)) center/cover;min-height:70vh;display:flex;align-items:center}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,4,10,.85),rgba(40,4,10,.35))}
+.hero .w{position:relative;padding-top:60px;padding-bottom:60px}
+.k{font:700 12px Montserrat;letter-spacing:.2em;text-transform:uppercase;color:var(--vr)}.hero .k{color:#fff}
+.hero h1{font-size:clamp(56px,14vw,130px);font-style:italic;margin:.1em 0}
+.hero p{max-width:520px;font-size:18px}.hero blockquote{margin:28px 0 0;border-left:3px solid var(--vr);padding-left:14px;max-width:340px;font-size:14px}
+.hero .bs{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+section{padding:64px 0}.alt{background:var(--g)}.dk{background:var(--vd);color:#fff}.dk .k{color:#ffb3bd}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+@media(max-width:760px){.g2{grid-template-columns:1fr}}
+.ph{border-radius:16px;min-height:260px;background:linear-gradient(135deg,var(--v),var(--vd)) center/cover}
+.pil{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:20px}
+.pil div{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px}.pil b{color:var(--vr)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-top:24px}
+.card{background:var(--card);color:var(--t);border:1px solid var(--bd);border-radius:14px;overflow:hidden;cursor:default}
+.card .ph{border-radius:0;min-height:140px;position:relative}.card .b{padding:14px}.card h3{font-size:16px}.card p{margin:.3em 0;font-size:14px}
+.date{position:absolute;top:10px;left:10px;background:#fff;color:var(--v);border-radius:8px;text-align:center;padding:4px 10px;font:800 18px/1 Montserrat}.date small{display:block;font-size:10px}
+.tag{font:600 11px Inter;color:var(--vr);text-transform:uppercase;letter-spacing:.06em}
+ul.ck{list-style:none;padding:0}ul.ck li:before{content:"✓ ";color:#ffb3bd}
+.box{border:1px solid rgba(255,255,255,.4);border-radius:14px;padding:20px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:20px}.gal .ph{min-height:170px;border-radius:10px}
+.insta{background:linear-gradient(90deg,var(--v),var(--vr));color:#fff;border-radius:16px;padding:26px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.insta .btn{background:#fff;color:var(--v)}
+footer{background:var(--vd);color:#fff;padding:28px 0;text-align:center;font-size:14px}
+dialog{border:0;border-radius:16px;max-width:560px;width:92%;padding:24px;background:var(--card);color:var(--t)}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+#adm{display:none;margin-top:10px;opacity:.6;padding:6px 12px;font-size:12px}#adm:hover{opacity:1}
+#ed{position:fixed;inset:0;background:var(--bg);z-index:40;overflow:auto;display:none;padding:20px}
+#ed fieldset{border:1px solid var(--bd);border-radius:10px;margin:10px 0;padding:10px}
+#ed label{display:block;font-size:12px;font-weight:600;margin-top:8px;text-transform:capitalize}
+#ed input,#ed textarea,#ed select{width:100%;padding:8px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--t);font:inherit}
+#ed .bar{position:sticky;top:0;background:var(--bg);padding:10px 0;display:flex;gap:8px;flex-wrap:wrap;z-index:2}
+#ed small{opacity:.7}.sp{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}#pw{position:sticky;top:64px;height:calc(100vh - 90px);overflow:auto;border:1px solid var(--bd);border-radius:12px;background:var(--bg)}#pw .pb{position:sticky;top:0;z-index:3;background:var(--g);padding:8px 12px;border-bottom:1px solid var(--bd)}#pv{width:1000px;transform-origin:top left}@media(max-width:900px){.sp{grid-template-columns:1fr}#pw{order:-1;height:38vh}}.mini{padding:4px 10px;border:1px solid var(--bd);background:var(--card);color:var(--t);border-radius:8px;cursor:pointer}
+</style></head><body>
+<header><div class="w"><a class="logo" href="#inicio" id="logo"></a><button id="bm" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+<nav id="nav"><a href="#inicio">Início</a><a href="#sobre">Sobre Nós</a><a href="#reunioes">Reuniões</a><a href="#temas">Temas</a><a href="#eventos">Eventos</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a><a class="btn" id="ig" target="_blank" rel="noopener">Instagram</a></nav></div></header>
+<main id="app"></main>
+<footer><span id="foot"></span><div><button class="btn o" id="adm">🔒 Admin</button></div></footer>
+<dialog id="dlg"></dialog>
+<div id="ed"></div>
+<script>
+const D={brand:{nome:"CONEC",sub:"Paróquia Nossa Senhora de Nazaré",logoImg:"",instagram:"https://instagram.com/conec_snsn",handle:"@conec_snsn",whatsapp:""},
+hero:{kicker:"Grupo de jovens católicos",titulo:"CONEC",frase:"Jovens que se conectam com Cristo e entre si.",texto:"Adolescentes e jovens que desejam viver a fé de forma verdadeira, acolhedora e comprometida.",img:"",versiculo:"“Não fostes vós que me escolhestes, mas fui eu que vos escolhi.” (Jo 15,16)"},
+sobre:{titulo:"Quem somos?",texto:"O CONEC é o grupo de jovens da Paróquia Nossa Senhora de Nazaré, formado por adolescentes e jovens que desejam viver a fé de forma verdadeira, acolhedora e comprometida. Aqui, caminhamos juntos na presença de Deus, fortalecendo nossa amizade, serviço e missão na Igreja e no mundo.",img:"",pilares:[{t:"Espiritualidade",d:"Mais perto de Deus, sempre."},{t:"Amizade",d:"Juntos na caminhada."},{t:"Serviço",d:"Servir também é amar."},{t:"Missão",d:"Levar Cristo ao mundo."}],historia:"",missao:"",coordenacao:""},
+reunioes:{texto:"Nos encontramos todos os sábados para partilhar a Palavra, viver a comunhão e crescer juntos na fé.",dia:"Todo sábado",inicio:"19h30",fim:"21h00",local:"Salão Paroquial — Paróquia N. Sra. de Nazaré",endereco:"",img:"",programacao:["Oração inicial","Formação / Tema do dia","Partilha em grupo","Oração final"]},
+eventos:[{dia:"18",mes:"JUL",ano:"2026",nome:"Um dia de férias com Jesus",local:"",hora:"",info:"Transporte: R$ 10,00",img:""},{dia:"12",mes:"AGO",ano:"2026",nome:"Adoração ao Santíssimo",local:"Santuário Nossa Sra. de Nazaré",hora:"19h00",info:"",img:""},{dia:"02",mes:"SET",ano:"2026",nome:"Círio das Crianças",local:"",hora:"",info:"Participação do CONEC",img:""}],
+temas:[{titulo:"Vida de Oração",desc:"Como rezar e viver a presença de Deus no dia a dia.",data:"",cat:"Oração",img:"",versiculo:"",reflexao:"",resp:"",status:"publicado"},{titulo:"Vocação",desc:"Qual é o plano de Deus para mim?",data:"",cat:"Vocação",img:"",versiculo:"",reflexao:"",resp:"",status:"publicado"},{titulo:"Amizade e Comunhão",desc:"Construindo laços que aproximam de Deus.",data:"",cat:"Amizade",img:"",versiculo:"",reflexao:"",resp:"",status:"publicado"},{titulo:"Missão",desc:"Ser sal e luz no mundo.",data:"",cat:"Missão",img:"",versiculo:"",reflexao:"",resp:"",status:"publicado"}],
+galeria:[{img:"",legenda:"Encontros"},{img:"",legenda:"Formações"},{img:"",legenda:"Eventos"},{img:"",legenda:"Missão"}]};
+const TPL={eventos:D.eventos[0],temas:D.temas[0],galeria:D.galeria[0],pilares:D.sobre.pilares[0],programacao:""};
+const LB={img:"Imagem (URL ou envio)",logoImg:"Logo (imagem)",nome:"Nome",sub:"Subtítulo",instagram:"Link do Instagram",handle:"@ do Instagram",whatsapp:"WhatsApp (DDD + número, só dígitos)",kicker:"Chamada",titulo:"Título",frase:"Frase",texto:"Texto",versiculo:"Versículo",historia:"História",missao:"Missão, visão e valores",coordenacao:"Coordenação",pilares:"Pilares",t:"Título",d:"Descrição",dia:"Dia",mes:"Mês (ex.: JUL)",ano:"Ano (eventos passados ficam ocultos)",inicio:"Início",fim:"Fim",local:"Local",endereco:"Endereço (ativa o mapa)",programacao:"Programação",eventos:"Eventos",temas:"Temas",galeria:"Galeria",hora:"Horário",info:"Informações",desc:"Descrição",data:"Data",cat:"Categoria",reflexao:"Reflexão",resp:"Responsável",status:"Status",legenda:"Legenda",brand:"Marca",hero:"Destaque inicial",sobre:"Sobre nós",reunioes:"Reuniões"};
+let C=structuredClone(D),db=null,assets=null,user=null;
+const $=s=>document.querySelector(s),e=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const cssu=u=>String(u).replace(/['"()\\\s<>]/g,c=>"%"+c.charCodeAt(0).toString(16).padStart(2,"0")),su=u=>/^https?:\/\//i.test(String(u||"").trim())?String(u).trim():"#";
+const MS={JAN:0,FEV:1,MAR:2,ABR:3,MAI:4,JUN:5,JUL:6,AGO:7,SET:8,OUT:9,NOV:10,DEZ:11};
+const vivo=x=>{const m=MS[String(x.mes).trim().toUpperCase().slice(0,3)],d=parseInt(x.dia,10);if(m===undefined||!d)return true;return new Date(parseInt(x.ano,10)||new Date().getFullYear(),m,d,23,59)>=new Date()};
+const mg=(a,b)=>{const o={...a};for(const k in b){o[k]=b[k]&&typeof b[k]==="object"&&!Array.isArray(b[k])&&a&&a[k]&&typeof a[k]==="object"?mg(a[k],b[k]):b[k]}return o};
+const bg=u=>u?`style="background-image:linear-gradient(rgba(40,4,10,.15),rgba(40,4,10,.15)),url('${e(cssu(u))}')"`:"";
+function render(cfg=C,tgt=$("#app")){const{brand:b,hero:h,sobre:s,reunioes:r}=cfg;
+const main=tgt===$("#app");if(main)$("#logo").innerHTML=(b.logoImg?`<img src="${e(b.logoImg)}" alt="">`:"✝")+`<span>${e(b.nome)}<small>${e(b.sub)}</small></span>`;
+if(main)$("#ig").href=su(b.instagram);
+const wn=String(b.whatsapp||"").replace(/\D/g,""),wa=wn?`<a class="btn" target="_blank" rel="noopener" href="https://wa.me/${wn}">Falar no WhatsApp</a>`:"";
+const map=r.endereco?`<a class="btn o" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.endereco)}">Ver no mapa</a>`:"";
+const evs=cfg.eventos.filter(vivo),ev=!evs.length?"<p>Novos eventos em breve. Acompanhe no Instagram!</p>":evs.map(x=>`<div class="card"><div class="ph" ${bg(x.img)}><div class="date">${e(x.dia)}<small>${e(x.mes)}</small></div></div><div class="b"><h3>${e(x.nome)}</h3>${x.local?`<p>📍 ${e(x.local)}</p>`:""}${x.hora?`<p>🕒 ${e(x.hora)}</p>`:""}<p>${e(x.info||"Mais informações em breve.")}</p></div></div>`).join("");
+const tm=cfg.temas.map((x,i)=>({x,i})).filter(o=>o.x.status!=="rascunho").map(({x,i})=>`<div class="card" style="cursor:pointer" onclick="tema(${i})"><div class="ph" ${bg(x.img)}></div><div class="b"><span class="tag">${e(x.cat)}</span><h3>${e(x.titulo)}</h3><p>${e(x.desc)}</p></div></div>`).join("");
+tgt.innerHTML=`<section class="hero" id="inicio" ${bg(h.img)}><div class="w"><div class="k">${e(h.kicker)}</div><h1>${e(h.titulo)}</h1><p><b>${e(h.frase)}</b><br>${e(h.texto)}</p><div class="bs"><a class="btn" href="#sobre">Conheça o CONEC</a><a class="btn o" href="#eventos">Próximos eventos</a></div><blockquote>${e(h.versiculo)}</blockquote></div></section>
+<section id="sobre"><div class="w g2"><div><div class="k">Sobre nós</div><h2>${e(s.titulo)}</h2><p>${e(s.texto)}</p>${s.historia?`<h3>História</h3><p>${e(s.historia)}</p>`:""}${s.missao?`<h3>Missão, visão e valores</h3><p>${e(s.missao)}</p>`:""}${s.coordenacao?`<h3>Coordenação</h3><p>${e(s.coordenacao)}</p>`:""}</div><div><div class="ph" ${bg(s.img)}></div><div class="pil">${s.pilares.map(p=>`<div><b>${e(p.t)}</b><br><small>${e(p.d)}</small></div>`).join("")}</div></div></div></section>
+<section class="dk" id="reunioes"><div class="w g2"><div><div class="k">Reuniões</div><h2>Nossas reuniões</h2><p>${e(r.texto)}</p><p>📅 <b>${e(r.dia)}</b>, ${e(r.inicio)} às ${e(r.fim)}<br>📍 ${e(r.local)}</p>${map}</div><div class="box"><b>Como é a reunião?</b><ul class="ck">${r.programacao.map(p=>`<li>${e(p)}</li>`).join("")}</ul></div></div></section>
+<section class="alt" id="eventos"><div class="w"><div class="k">Próximos eventos</div><h2>Eventos</h2><div class="grid">${ev}</div></div></section>
+<section class="dk" id="temas"><div class="w"><div class="k">Temas de formação</div><h2>Nossos temas</h2><div class="grid">${tm}</div></div></section>
+<section id="galeria"><div class="w"><div class="k">Galeria</div><h2>Nossa história em fotos</h2><div class="gal">${cfg.galeria.map(g=>`<div class="ph" role="img" aria-label="${e(g.legenda)}" title="${e(g.legenda)}" ${bg(g.img)}></div>`).join("")}</div></div></section>
+<section id="contato" style="padding-top:0"><div class="w"><div class="insta"><div><h3>Acompanhe nosso dia a dia no Instagram</h3>Novidades, eventos e fotos. ${e(b.handle)}</div><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" target="_blank" rel="noopener" href="${e(su(b.instagram))}">Nos siga no Instagram</a>${wa}</div></div></div></section>`;
+if(main)$("#foot").innerHTML=`${e(b.nome)} — ${e(h.frase)} ✝`}
+function tema(i){const x=C.temas[i];$("#dlg").innerHTML=`<span class="tag">${e(x.cat)} ${x.data?"· "+e(x.data):""}</span><h2>${e(x.titulo)}</h2><p>${e(x.desc)}</p>${x.versiculo?`<blockquote>${e(x.versiculo)}</blockquote>`:""}${x.reflexao?`<p>${e(x.reflexao)}</p>`:""}${x.resp?`<p><small>Formação: ${e(x.resp)}</small></p>`:""}<button class="btn" onclick="$('#dlg').close()">Fechar</button>`;$("#dlg").showModal()}
+const tg=v=>{$("#nav").classList.toggle("on",v);$("#bm").setAttribute("aria-expanded",$("#nav").classList.contains("on"))};$("#bm").onclick=()=>tg();$("#nav").onclick=()=>tg(false);
+/* ---- Painel ---- */
+let draft;
+function pvr(){const p=$("#pv");if(!p)return;render(draft,p);p.querySelectorAll("[id]").forEach(n=>n.removeAttribute("id"));p.querySelectorAll("[onclick]").forEach(n=>n.removeAttribute("onclick"));p.onclick=ev=>{if(ev.target.closest("a"))ev.preventDefault()};p.style.zoom=Math.min(1,$("#pw").clientWidth/1000)}
+$("#ed").addEventListener("input",()=>{clearTimeout(window._t);window._t=setTimeout(pvr,150)});
+function ctl(o,k,lab){const v=o[k],w=document.createElement("div");const L=document.createElement("label");L.textContent=lab||LB[k]||k;w.append(L);
+if(/img$/i.test(k)){const i=document.createElement("input");i.value=v;i.placeholder="URL da imagem";i.oninput=()=>o[k]=i.value;w.append(i);
+if(assets){const f=document.createElement("input");f.type="file";f.accept="image/*";f.onchange=async()=>{try{L.textContent=(lab||LB[k]||k)+" (enviando…)";const r=await assets.upload(f.files[0]);o[k]=r.url;i.value=r.url;pvr();L.textContent=lab||LB[k]||k}catch(x){L.textContent="Falha no envio"}};w.append(f)}}
+else if(k==="status"){const s=document.createElement("select");["publicado","rascunho"].forEach(t=>s.add(new Option(t,t)));s.value=v;s.onchange=()=>o[k]=s.value;w.append(s)}
+else{const t=document.createElement(String(v).length>60?"textarea":"input");t.value=v;if(t.tagName==="TEXTAREA")t.rows=4;t.oninput=()=>o[k]=t.value;w.append(t)}return w}
+function build(o,box){for(const k in o){const v=o[k];
+if(Array.isArray(v)){const fs=document.createElement("fieldset");fs.innerHTML=`<legend><b>${LB[k]||k}</b></legend>`;
+v.forEach((it,i)=>{const row=document.createElement("fieldset");
+if(typeof it==="object")build(it,row);else{const h={a:it};row.append(ctl(h,"a","item"));row.firstChild.querySelector("input").oninput=ev=>v[i]=ev.target.value}
+const bar=document.createElement("div");[["↑",-1],["↓",1],["Excluir",0]].forEach(([n,d])=>{const b=document.createElement("button");b.className="mini";b.textContent=n;b.onclick=()=>{if(d){const j=i+d;if(j<0||j>=v.length)return;[v[i],v[j]]=[v[j],v[i]]}else v.splice(i,1);form()};bar.append(b)});row.append(bar);fs.append(row)});
+const add=document.createElement("button");add.className="mini";add.textContent="+ Adicionar";add.onclick=()=>{const t=v[0]??TPL[k];v.push(typeof t==="object"?Object.fromEntries(Object.keys(t).map(q=>[q,q==="status"?"rascunho":Array.isArray(t[q])?[]:typeof t[q]==="object"?{}:""])):"");form()};fs.append(add);box.append(fs)}
+else if(typeof v==="object"){const fs=document.createElement("fieldset");fs.innerHTML=`<legend><b>${LB[k]||k}</b></legend>`;build(v,fs);box.append(fs)}
+else box.append(ctl(o,k))}}
+function form(){const y=$("#ed").scrollTop;const ed=$("#ed");ed.innerHTML=`<div class="bar"><button class="btn" id="sv">Salvar e publicar</button><button class="btn o" id="cl" style="color:var(--t)">Fechar</button><small id="msg">Edite qualquer texto, imagem, evento ou tema.</small></div><h2>Painel administrativo</h2><div class="sp"><div id="fm"></div><div id="pw"><div class="pb"><b>Pré-visualização ao vivo</b> <small>(não publicada até salvar)</small></div><div id="pv"></div></div></div>`;
+build(draft,$("#fm"));pvr();$("#sv").onclick=async()=>{try{await db.doc("site/content").set(draft);C=structuredClone(draft);render();$("#msg").textContent="Salvo! O site já está atualizado."}catch(x){$("#msg").textContent="Não foi possível salvar: "+(x.message||x.code)}};$("#cl").onclick=()=>{ed.style.display="none";render()};ed.scrollTop=y}
+const H="afda1e36c6f9639104c8a02db21e1ed5a37d51f13e16bde587416480024119ff";
+const sha=async t=>[...new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)))].map(b=>b.toString(16).padStart(2,"0")).join("");
+function openEd(){if(!(user&&user.canEdit()))return;draft=structuredClone(C);$("#ed").style.display="block";form()}
+$("#adm").onclick=()=>{if(sessionStorage.getItem("conec_ok")==="1")return openEd();
+$("#dlg").innerHTML=`<h2>Acesso administrativo</h2><label>Usuário<input id="lu" autocomplete="username" style="width:100%;padding:8px;margin:4px 0 10px"></label><label>Senha<input id="lp" type="password" autocomplete="current-password" style="width:100%;padding:8px;margin:4px 0 10px"></label><p id="le" style="color:var(--vr);margin:0 0 10px"></p><button class="btn" id="lg">Entrar</button> <button class="btn o" onclick="$('#dlg').close()">Cancelar</button>`;$("#dlg").showModal();
+const go=async()=>{if(await sha($("#lu").value.trim()+":"+$("#lp").value)===H){try{sessionStorage.setItem("conec_ok","1")}catch(x){}$("#dlg").close();openEd()}else $("#le").textContent="Usuário ou senha incorretos."};
+$("#lg").onclick=go;$("#lp").onkeydown=ev=>{if(ev.key==="Enter")go()}};
+render();
+(async()=>{try{user=await claude.use("user");db=await claude.use("db");assets=await claude.use("assets");if(user&&user.canEdit())$("#adm").style.display="inline-block";
+if(db){const s=await db.doc("site/content").get().catch(()=>null);const d=s&&(s.data?s.data():s);if(d&&typeof d==="object"&&d.brand){C=mg(D,d);render()}}
+}catch(x){}})();
+</script></body></html>
